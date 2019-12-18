@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Destination</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <nav role='navigation'>
+                <ul id="menuList">
+                    <!-- <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html">Menu</a> </li>
+                    <li><a href="services.html">Services</a>
+                        <ul>
+                            <li><a href="">Information</a></li>
+                            <li><a href="">Location</a></li>
+                            <li><a href="">Assistance</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="audio.html" class="active">Visite virtuelle (audio)</a></li>
+                    <li><a href="video.html">Visite virtuelle (vidéo)</a></li>
+                    <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <table class="destinations-array"
+        summary="Liste des destinations avec leurs pays, le circuit, le prix et le button de reservation">
+        <caption>Promotions</caption>
+        <button class="modal-toggle" id="modal-toggle">Ajouter destination</button>
+        <thead>
+            <tr>
+                <th>Pays</th>
+                <th></th>
+                <th>Circuit</th>
+                <th>Prix</th>
+                <th>Réservation</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="destinationsTableBody">
+        </tbody>
+
+        <div class="modal">
+            <div class="modal-overlay modal-toggle"></div>
+            <div class="modal-wrapper modal-transition">
+                <div class="modal-header">
+                    <button class="modal-close modal-toggle" id="modal-toggle">X</button>
+                    <h2 class="modal-heading">Ajouter une destination</h2>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div>
+                                <label class="required" for="destination">Destination City/Country:</label><br />
+                                <input id="destinationName" class="input" name="destination" type="text" value=""
+                                    size="30" required/><br />
+                            </div>
+                            <div>
+                                <label class="required" for="prix">Prix:</label><br />
+                                <input id="prix" class="input" name="prix" type="text" value="" size="30" required /><br />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="description">Description:</label><br />
+                            <input id="description" class="input" name="description" rows="7" cols="30" required></input><br />
+                        </div>
+                        <div class="row">
+                            <label for="image">Image:</label><br />
+                            <input id="imageUrl" class="input" name="image" type="text" value=""/><br />
+                            <button class="modal-toggle-save" id="modal-toggle">Sauvegarder</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+
+    </table>
+</body>
+
+</html>

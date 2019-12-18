@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Destination</title>
+    <link rel="stylesheet" href="style.css">
+      <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <nav role='navigation' id="nav">
+                <ul id="menuList">
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <button class="modal-toggle adminAction" id="modal-toggle">Ajouter destination</button>        
+    <div class="container-fluid">
+        <div class="row" id="row">
+        </div>
+    </div>
+        <div class="myModal">
+            <div class="modal-overlay modal-toggle"></div>
+            <div class="modal-wrapper modal-transition">
+                <div class="modal-header">
+                    <button class="modal-close modal-toggle" id="modal-toggle">X</button>
+                    <h2 class="modal-heading">Ajouter une destination</h2>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div>
+                                <label class="required" for="destination">Destination City/Country:</label><br />
+                                <input id="destinationName" class="input" name="destination" type="text" value=""
+                                    size="30" required/><br />
+                            </div>
+                            <div>
+                                <label class="required" for="prix">Prix:</label><br />
+                                <input id="prix" class="input" name="prix" type="text" value="" size="30" required /><br />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="description">Description:</label><br />
+                            <input id="description" class="input" name="description" rows="7" cols="30" required></input><br />
+                        </div>
+                        <div class="row">
+                            <label for="image">Image:</label><br />
+                            <input id="imageUrl" class="input" name="image" type="text" value=""/><br />
+                            <button class="modal-toggle-save" id="modal-toggle">Sauvegarder</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+         </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</html>

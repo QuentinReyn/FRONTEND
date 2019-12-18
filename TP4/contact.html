@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>MENU</title>
+    <link rel="stylesheet" href="style.css">
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <nav role='navigation' id="nav">
+                <ul id="menuList">
+                  
+                </ul>
+            </nav>   
+        </div>
+</header>
+    <div class="container">
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="row">
+                <div>
+                    <label class="required" for="firstName">Your first name:</label><br />
+                    <input id="firstName" class="input" name="firstName" type="text" value="" size="30" /><br />
+                    <span id="firstName_validation" class="error_message"></span>
+                </div>
+                <div>
+                    <label class="required" for="lastName">Your last name:</label><br />
+                    <input id="lastName" class="input" name="lastName" type="text" value="" size="30" /><br />
+                    <span id="lastName_validation" class="error_message"></span>
+                </div>
+            </div>
+            <div class="row">
+                <label for="email">Your email:</label><br />
+                <input id="email" class="input" name="email" type="email" value="" size="30" /><br />
+                <span id="email_validation" class="error_message"></span>
+            </div>
+            <div class="row">
+                <label for="telephone">Your phone number:</label><br />
+                <input id="email" class="input" name="email" type="tel" value="" size="30" /><br />
+                <span id="email_validation" class="error_message"></span>
+            </div>
+            <div class="row">
+                <label class="required" for="message">Your message:</label><br />
+                <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                <span id="message_validation" class="error_message"></span>
+            </div>
+
+            <input id="submit_button" type="submit" value="Send" />
+        </form>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>

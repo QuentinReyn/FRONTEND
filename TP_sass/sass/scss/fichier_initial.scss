@@ -1,0 +1,155 @@
+//1------
+$elements : 4;
+  @for $i from 1 through $elements{
+    .taille-#{$i}{
+        width:(100/$elements)*$i;
+    }
+}
+
+//2-----
+@mixin mixin-taille{
+    @for $i from 1 through $elements{
+        .taille-#{$i}{
+            width:(100/$elements)*$i;
+        }
+    }
+}
+
+@include mixin-taille;
+
+//3-----
+$sizes : 'petite','standard','moyenne','grande';
+$i:1;
+@each $size in $sizes{
+    .taille-#{$size} {
+        width: (100/length($sizes))*$i;
+      }
+      $i:$i+1;
+   }
+
+//4-----
+@mixin mixin-tailleList($tailles){
+$i:1;
+@each $size in $sizes{
+    .taille-#{$size} {
+        width: (100/length($tailles))*$i;
+      }
+      $i:$i+1;
+   }
+}
+
+@include mixin-tailleList($sizes);
+
+
+//5-----
+@mixin mixin-tailleList($classe,$tailles){
+$i:1;
+    @each $size in $sizes{
+        .#{$classe}-#{$size} {
+            width: (100/length($tailles))*$i;
+          }
+          $i:$i+1;
+       }
+    }
+
+$class:generic-class;
+@include mixin-tailleList($class,$sizes);
+
+//6-----
+@function returnFirstInArray($array){
+ @return nth($array,1);
+}
+
+p{
+    content:returnFirstInArray($sizes);
+}
+
+//7----
+@function returnLastInArray($array) {
+    @return nth($array, length($array));
+  }
+
+a{
+    content:returnLastInArray($sizes);
+}
+
+//8-----
+
+$destinations: ('espagne':'Espagne','maroc':'Maroc','bresil':'Bresil','caraibes':'Les iles caraibes');
+
+//9----
+@each $destination,$content in $destinations{
+    .ville-#{$destination}::before{
+        display:block;
+        content:#{$content};
+    }
+  }
+//10-------
+@mixin setDestination($map,$position){
+@each $destination,$content in $map{
+    .ville-#{$destination}::#{$position}{
+        display:block;
+        content:#{$content};
+    }
+  }
+}
+$action : 'after';
+@include setDestination($destinations,$action);
+
+//11
+$socials:('facebook':#3b5998,'twitter':#00aced,'linkedin':#007bb6,'instagram':#bc2a8d,'pinterest':#cb2027,'youtube':#bb0000);
+
+//12
+@each $social,$color in $socials{
+    .social-#{$social}{
+        background:$color;
+        color:white;
+    }
+}
+
+//13
+//voir index
+
+//14
+
+//14
+@mixin reseau ($social) {
+    @each $reseau, $bg in $social{
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+      .fa-#{$reseau} {
+        background: lighten($bg, 20%);
+        color: darken($bg, 20%);
+      }
+    }
+  }
+  @include reseau($socials);
+  
+  //15
+  $light : 20%;
+  $dark : 20%;
+  @mixin reseauLD ($social, $light, $dark) {
+    @each $reseau, $bg in $social{
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+      .fa-#{$reseau} {
+        background: lighten($bg, $light);
+        color: darken($bg, $dark);
+      }
+    }
+  }
+  @include reseauLD($socials, $light, $dark);

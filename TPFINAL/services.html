@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>MENU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <nav role='navigation' id="nav">
+                <ul id="menuList">
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <div class="section information">
+        <h3><u>Informations sur nos agences partenaires</u></h3>
+        <div class="options">
+            <div class="option active"
+                style="--optionBackground:url(https://www.tourmag.com/photo/art/grande/8309809-13010365.jpg?v=1443188561);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                      <img class="fas" src="assets/images/thomascook.png" >
+                    </div>
+                    <div class="info">
+                        <div class="main">Agence Thomas Cook</div>
+                        <div class="sub">destinations dans les DOM-TOM</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option"
+                style="--optionBackground:url(https://i.pinimg.com/originals/71/f5/b2/71f5b267ba11ce21f811bf2883adcdc3.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <img class="fas" src="assets/images/jessvoyage.png" >
+                    </div>
+                    <div class="info">
+                        <div class="main">Agence Jess Voyages</div>
+                        <div class="sub">destinations d'Europe de l'Est</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option"
+                style="--optionBackground:url(https://4.bp.blogspot.com/-qqaOU4aWHls/WlZiEuLYI_I/AAAAAAAABoU/4g8nz8-aDkQ3esbJaWkHG1CUkEQxrZEzgCLcBGAs/s1600/devanture.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <img class="fas" src="assets/images/clemenceau.png" >
+                    </div>
+                    <div class="info">
+                        <div class="main">Agence Clemenceau Voyages</div>
+                        <div class="sub">destinations d'Amerique du Nord</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option"
+                style="--optionBackground:url(https://www.tourmag.com/photo/art/grande/10724916-17687501.jpg?v=1481018460);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <img class="fas" src="assets/images/jettour.png" >
+                    </div>
+                    <div class="info">
+                        <div class="main">Agence Jet Tours</div>
+                        <div class="sub">destinations d'Asie</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section assistance">
+        <h3><u>Assistance sur nos agences partenaires</u></h3>
+        <div class="agence-item">
+            <div class="agence-title">
+                Thomas Cook
+            </div>
+            <div class="agence-responsable">
+                <div class="nom-responsable"><b>Andre GOMEZ :</b></div> 
+                <div class="num-responsable">0476988221</div>
+            </div>
+        </div>
+        <div class="agence-item">
+            <div class="agence-title">
+                Jess Voyages
+            </div>
+            <div class="agence-responsable">
+                <div class="nom-responsable"><b>Jessica Roy :</b></div> 
+                <div class="num-responsable">0478412311</div>
+            </div>
+        </div>
+        <div class="agence-item">
+            <div class="agence-title">
+                Clemenceau Voyages
+            </div>
+            <div class="agence-responsable">
+                <div class="nom-responsable"><b>Mathieu Clemenceau :</b></div> 
+                <div class="num-responsable">0481646138</div>
+            </div>
+        </div>
+        <div class="agence-item">
+            <div class="agence-title">
+                Jet Tours
+            </div>
+            <div class="agence-responsable">
+                <div class="nom-responsable"><b>Xavier Filleul :</b></div> 
+                <div class="num-responsable">0478139472</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section localisation">
+        <h3><u>Localisation de nos agences partenaires</u></h3>
+        <div id="map"></div>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+<script src="map.js"></script>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>MENU</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <h3 class="section-title" style="font-weight: bold">Menu</h3>
+
+        <a href="menu.html">Menu</a>
+        <a href="services.html">Services</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="audio.html">Visite virtuelle (audio)</a>
+        <a href="video.html">Visite virtuelle (vidéo)</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <div class="row">
+            <div>
+                <label class="required" for="firstName">Your first name:</label><br />
+                <input id="firstName" class="input" name="firstName" type="text" value="" size="30" /><br />
+                <span id="firstName_validation" class="error_message"></span>
+            </div>
+            <div>
+                <label class="required" for="lastName">Your last name:</label><br />
+                <input id="lastName" class="input" name="lastName" type="text" value="" size="30" /><br />
+                <span id="lastName_validation" class="error_message"></span>
+            </div>
+        </div>
+        <div class="row">
+            <label for="email">Your email:</label><br />
+            <input id="email" class="input" name="email" type="email" value="" size="30" /><br />
+            <span id="email_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+            <label for="telephone">Your phone number:</label><br />
+            <input id="email" class="input" name="email" type="tel" value="" size="30" /><br />
+            <span id="email_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+            <label class="required" for="message">Your message:</label><br />
+            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+            <span id="message_validation" class="error_message"></span>
+        </div>
+
+        <input id="submit_button" type="submit" value="Send" />
+    </form>
+
+</body>
+
+</html>

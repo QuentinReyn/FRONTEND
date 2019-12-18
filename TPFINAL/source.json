@@ -1,0 +1,6 @@
+[
+  { "id": 1, "destination": "Espagne", "image": "<img src='assets/images/seville.jpg'></img>", "description": "Séjour de 5 nuits dans un hotel 4 étoiles", "prix": "500€" },
+  { "id": 2, "destination": "France", "image": "<img src='assets/images/paris.jpg'></img>", "description": "Séjour de 7 nuits dans un hotel 4 étoiles", "prix": "759€" },
+  { "id": 3, "destination": "Angleterre", "image": "<img src='assets/images/londre.jfif'></img>", "description": "Séjour de 7 nuits dans un hotel 5 étoiles", "prix": "1259€" },
+  { "id": 4, "destination": "Cuba", "image": "<img src='assets/images/cuba.jfif'></img>", "description": "Séjour de 4 nuits dans un hotel 3 étoiles", "prix": "359€" }
+]

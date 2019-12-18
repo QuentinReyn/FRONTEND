@@ -1,0 +1,279 @@
+.taille-1 {
+  width: 25; }
+
+.taille-2 {
+  width: 50; }
+
+.taille-3 {
+  width: 75; }
+
+.taille-4 {
+  width: 100; }
+
+.taille-1 {
+  width: 25; }
+
+.taille-2 {
+  width: 50; }
+
+.taille-3 {
+  width: 75; }
+
+.taille-4 {
+  width: 100; }
+
+.taille-petite {
+  width: 25; }
+
+.taille-standard {
+  width: 50; }
+
+.taille-moyenne {
+  width: 75; }
+
+.taille-grande {
+  width: 100; }
+
+.taille-petite {
+  width: 25; }
+
+.taille-standard {
+  width: 50; }
+
+.taille-moyenne {
+  width: 75; }
+
+.taille-grande {
+  width: 100; }
+
+.generic-class-petite {
+  width: 25; }
+
+.generic-class-standard {
+  width: 50; }
+
+.generic-class-moyenne {
+  width: 75; }
+
+.generic-class-grande {
+  width: 100; }
+
+p {
+  content: "petite"; }
+
+a {
+  content: "grande"; }
+
+.ville-espagne::before {
+  display: block;
+  content: Espagne; }
+
+.ville-maroc::before {
+  display: block;
+  content: Maroc; }
+
+.ville-bresil::before {
+  display: block;
+  content: Bresil; }
+
+.ville-caraibes::before {
+  display: block;
+  content: Les iles caraibes; }
+
+.ville-espagne::after {
+  display: block;
+  content: Espagne; }
+
+.ville-maroc::after {
+  display: block;
+  content: Maroc; }
+
+.ville-bresil::after {
+  display: block;
+  content: Bresil; }
+
+.ville-caraibes::after {
+  display: block;
+  content: Les iles caraibes; }
+
+.social-facebook {
+  background: #3b5998;
+  color: white; }
+
+.social-twitter {
+  background: #00aced;
+  color: white; }
+
+.social-linkedin {
+  background: #007bb6;
+  color: white; }
+
+.social-instagram {
+  background: #bc2a8d;
+  color: white; }
+
+.social-pinterest {
+  background: #cb2027;
+  color: white; }
+
+.social-youtube {
+  background: #bb0000;
+  color: white; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fa-facebook {
+  background: #718dc8;
+  color: #1e2e4f; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fa-twitter {
+  background: #54d0ff;
+  color: #006287; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fa-linkedin {
+  background: #1db6ff;
+  color: #003650; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fa-instagram {
+  background: #de6eba;
+  color: #69174e; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fa-pinterest {
+  background: #e76a6f;
+  color: #731216; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fa-youtube {
+  background: #ff2222;
+  color: #550000; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fa-facebook {
+  background: #718dc8;
+  color: #1e2e4f; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fa-twitter {
+  background: #54d0ff;
+  color: #006287; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fa-linkedin {
+  background: #1db6ff;
+  color: #003650; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fa-instagram {
+  background: #de6eba;
+  color: #69174e; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fa-pinterest {
+  background: #e76a6f;
+  color: #731216; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fa-youtube {
+  background: #ff2222;
+  color: #550000; }
+
+/*# sourceMappingURL=fichier_initial.css.map */

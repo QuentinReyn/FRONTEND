@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Titre de la page</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <button id="chooseDestination" onclick="chooseVille()">Choisir Destination</button>
+    <form id="formChoosenVille" onsubmit="return suggestVille()">
+        <div>
+            <label for="choosenVille">Ville : </label>
+            <input id="choosenVille" type="text" class="validate" hidden>
+            <button form="submit" onclick="suggestVille()">Submit</button>
+        </div>
+    </form>
+    <p id="displayVilles"></p>
+    <ul id="listVilles">
+
+    </ul>
+</body>
+
+</html>
